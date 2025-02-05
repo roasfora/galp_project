@@ -1,0 +1,7 @@
+# ignorar a pasta data
+
+data/
+
+#ignorar a venv
+
+venv/
