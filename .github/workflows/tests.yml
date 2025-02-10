@@ -24,21 +24,30 @@ jobs:
         options: --health-cmd "pg_isready" --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
-    - name: Clonar o repositório
+    - name: 📥 Clonar o repositório
       uses: actions/checkout@v3
 
-    - name: Configurar Python
+    - name: 🐍 Configurar Python
       uses: actions/setup-python@v3
       with:
         python-version: 3.9
 
-    - name: Instalar dependências
+    - name: 📦 Instalar dependências
       run: |
         pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Definir variáveis de ambiente
-      run: echo "API_KEY_GALP=${{ secrets.API_KEY_GALP }}" >> $GITHUB_ENV
+    - name: 🌍 Definir variáveis de ambiente
+      run: |
+        echo "API_KEY_GALP=${{ secrets.API_KEY_GALP }}" >> $GITHUB_ENV
+        echo "PYTHONPATH=$PYTHONPATH:$(pwd)/src" >> $GITHUB_ENV  # Fix for imports
 
-    - name: Rodar os testes com pytest
-      run: pytest tests/
+    - name: 🖥️ Instalar Chrome e WebDriver (Selenium)
+      run: |
+        sudo apt update
+        sudo apt install -y chromium-chromedriver
+        echo "CHROME_BIN=$(which chromium-browser)" >> $GITHUB_ENV
+        echo "CHROMEDRIVER_BIN=$(which chromedriver)" >> $GITHUB_ENV
+
+    - name: 🏃 Rodar os testes com pytest
+      run: pytest -v tests/
