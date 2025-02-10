@@ -10,7 +10,7 @@ def fetch_monthly_adjusted_data(symbol='GALP.LS'):
     """
 
     # Obtém a chave da API da variável de ambiente
-    api_key = 'GA91UFJFP6IAB2L4'
+    api_key = os.getenv("API_KEY_GALP")  # Agora busca a chave do ambiente
     if not api_key:
         raise ValueError("A API Key não está definida. Configure a variável de ambiente 'API_KEY_GALP'.")
 
