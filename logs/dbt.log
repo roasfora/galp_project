@@ -1,0 +1,1798 @@
+[0m11:20:01.655581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022023B20D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022023AC4F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022023AFD090>]}
+
+
+============================== 11:20:01.657631 | 5dbd501b-d118-4132-b7e1-305d278d8200 ==============================
+[0m11:20:01.657631 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:20:01.657631 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init galp_dbt_project', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:20:01.677297 [debug] [MainThread]: Starter project path: C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\venv\Lib\site-packages\dbt\include\starter_project
+[0m11:20:01.692633 [info ] [MainThread]: 
+Your new dbt project "galp_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:20:01.692633 [info ] [MainThread]: Setting up your profile.
+[0m11:24:20.539992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F107CC6890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F107D1B890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F107CC5C50>]}
+
+
+============================== 11:24:20.539992 | 83521fc0-2267-44bf-9692-205a2f033113 ==============================
+[0m11:24:20.539992 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:24:20.539992 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:24:20.555629 [info ] [MainThread]: dbt version: 1.9.2
+[0m11:24:20.571450 [info ] [MainThread]: python version: 3.11.9
+[0m11:24:20.571450 [info ] [MainThread]: python path: C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\venv\Scripts\python.exe
+[0m11:24:20.571450 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m11:24:20.642321 [info ] [MainThread]: Using profiles dir at C:\Users\isabe\.dbt
+[0m11:24:20.642321 [info ] [MainThread]: Using profiles.yml file at C:\Users\isabe\.dbt\profiles.yml
+[0m11:24:20.642321 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml
+[0m11:24:20.642321 [info ] [MainThread]: adapter type: postgres
+[0m11:24:20.642321 [info ] [MainThread]: adapter version: 1.9.0
+[0m11:24:20.642321 [info ] [MainThread]: Configuration:
+[0m11:24:20.654164 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:24:20.654164 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:24:20.654164 [info ] [MainThread]: Required dependencies:
+[0m11:24:20.654164 [debug] [MainThread]: Executing "git --help"
+[0m11:24:20.730006 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:24:20.730006 [debug] [MainThread]: STDERR: "b''"
+[0m11:24:20.730006 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:24:20.740012 [info ] [MainThread]: Connection:
+[0m11:24:20.741332 [info ] [MainThread]:   host: dpg-cultgn1u0jms73bglra0-a.oregon-postgres.render.com
+[0m11:24:20.741384 [info ] [MainThread]:   port: 5432
+[0m11:24:20.741384 [info ] [MainThread]:   user: galp_project_user
+[0m11:24:20.741384 [info ] [MainThread]:   database: galp_project
+[0m11:24:20.741384 [info ] [MainThread]:   schema: public
+[0m11:24:20.741384 [info ] [MainThread]:   connect_timeout: 10
+[0m11:24:20.741384 [info ] [MainThread]:   role: None
+[0m11:24:20.749698 [info ] [MainThread]:   search_path: None
+[0m11:24:20.750698 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:24:20.751681 [info ] [MainThread]:   sslmode: None
+[0m11:24:20.751681 [info ] [MainThread]:   sslcert: None
+[0m11:24:20.751681 [info ] [MainThread]:   sslkey: None
+[0m11:24:20.751681 [info ] [MainThread]:   sslrootcert: None
+[0m11:24:20.751681 [info ] [MainThread]:   application_name: dbt
+[0m11:24:20.756379 [info ] [MainThread]:   retries: 1
+[0m11:24:20.756379 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:24:21.045187 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:24:21.233559 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:24:21.233559 [debug] [MainThread]: On debug: select 1 as id
+[0m11:24:21.233559 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:24:22.673941 [debug] [MainThread]: SQL status: SELECT 1 in 1.444 seconds
+[0m11:24:22.673941 [debug] [MainThread]: On debug: Close
+[0m11:24:22.673941 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:24:22.673941 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:24:22.673941 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml> not found
+
+[0m11:24:22.673941 [debug] [MainThread]: Command `dbt debug` failed at 11:24:22.673941 after 2.25 seconds
+[0m11:24:22.673941 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:24:22.673941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F107D20110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F10236CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F107CC5AD0>]}
+[0m11:24:22.673941 [debug] [MainThread]: Flushing usage events
+[0m11:24:23.697475 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:25:57.225728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DAFE8FD2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DAFE91BB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DAFE9230D0>]}
+
+
+============================== 11:25:57.225728 | 5abfa972-1539-4123-aa1a-61a9d81e023d ==============================
+[0m11:25:57.225728 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:25:57.239741 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:25:57.258365 [info ] [MainThread]: dbt version: 1.9.2
+[0m11:25:57.259514 [info ] [MainThread]: python version: 3.11.9
+[0m11:25:57.260517 [info ] [MainThread]: python path: C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\venv\Scripts\python.exe
+[0m11:25:57.260517 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m11:25:57.321751 [info ] [MainThread]: Using profiles dir at C:\Users\isabe\.dbt
+[0m11:25:57.329620 [info ] [MainThread]: Using profiles.yml file at C:\Users\isabe\.dbt\profiles.yml
+[0m11:25:57.329620 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml
+[0m11:25:57.331130 [info ] [MainThread]: adapter type: postgres
+[0m11:25:57.331130 [info ] [MainThread]: adapter version: 1.9.0
+[0m11:25:57.331130 [info ] [MainThread]: Configuration:
+[0m11:25:57.331130 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:25:57.331130 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:25:57.336640 [info ] [MainThread]: Required dependencies:
+[0m11:25:57.336640 [debug] [MainThread]: Executing "git --help"
+[0m11:25:57.409187 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:25:57.409187 [debug] [MainThread]: STDERR: "b''"
+[0m11:25:57.410768 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:25:57.412246 [info ] [MainThread]: Connection:
+[0m11:25:57.413519 [info ] [MainThread]:   host: dpg-cultgn1u0jms73bglra0-a.oregon-postgres.render.com
+[0m11:25:57.414593 [info ] [MainThread]:   port: 5432
+[0m11:25:57.415253 [info ] [MainThread]:   user: galp_project_user
+[0m11:25:57.415758 [info ] [MainThread]:   database: galp_project
+[0m11:25:57.416879 [info ] [MainThread]:   schema: public
+[0m11:25:57.417401 [info ] [MainThread]:   connect_timeout: 10
+[0m11:25:57.418967 [info ] [MainThread]:   role: None
+[0m11:25:57.418967 [info ] [MainThread]:   search_path: None
+[0m11:25:57.421296 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:25:57.421296 [info ] [MainThread]:   sslmode: None
+[0m11:25:57.421296 [info ] [MainThread]:   sslcert: None
+[0m11:25:57.423616 [info ] [MainThread]:   sslkey: None
+[0m11:25:57.423616 [info ] [MainThread]:   sslrootcert: None
+[0m11:25:57.423616 [info ] [MainThread]:   application_name: dbt
+[0m11:25:57.423616 [info ] [MainThread]:   retries: 1
+[0m11:25:57.423616 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:25:57.692733 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:25:57.755692 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:25:57.755692 [debug] [MainThread]: On debug: select 1 as id
+[0m11:25:57.755692 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:25:59.341784 [debug] [MainThread]: SQL status: SELECT 1 in 1.589 seconds
+[0m11:25:59.341784 [debug] [MainThread]: On debug: Close
+[0m11:25:59.341784 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:25:59.341784 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:25:59.341784 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml> not found
+
+[0m11:25:59.341784 [debug] [MainThread]: Command `dbt debug` failed at 11:25:59.341784 after 2.23 seconds
+[0m11:25:59.341784 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:25:59.341784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DAF906CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DAFE923510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DAFE921910>]}
+[0m11:25:59.357322 [debug] [MainThread]: Flushing usage events
+[0m11:26:00.366530 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:28:32.752914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C450EC6250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4509F6890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C450EFCCD0>]}
+
+
+============================== 11:28:32.765513 | a2a8e2ea-890c-4d3b-90bb-0ccdbbeb904a ==============================
+[0m11:28:32.765513 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:28:32.765513 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m11:28:32.781210 [info ] [MainThread]: dbt version: 1.9.2
+[0m11:28:32.781210 [info ] [MainThread]: python version: 3.11.9
+[0m11:28:32.781210 [info ] [MainThread]: python path: C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\venv\Scripts\python.exe
+[0m11:28:32.781210 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m11:28:32.859790 [info ] [MainThread]: Using profiles dir at C:\Users\isabe\.dbt
+[0m11:28:32.859790 [info ] [MainThread]: Using profiles.yml file at C:\Users\isabe\.dbt\profiles.yml
+[0m11:28:32.859790 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml
+[0m11:28:32.859790 [info ] [MainThread]: adapter type: postgres
+[0m11:28:32.859790 [info ] [MainThread]: adapter version: 1.9.0
+[0m11:28:32.956929 [info ] [MainThread]: Configuration:
+[0m11:28:32.956929 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:28:32.959206 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:28:32.959206 [info ] [MainThread]: Required dependencies:
+[0m11:28:32.959206 [debug] [MainThread]: Executing "git --help"
+[0m11:28:33.027738 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:28:33.027738 [debug] [MainThread]: STDERR: "b''"
+[0m11:28:33.027738 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:28:33.027738 [info ] [MainThread]: Connection:
+[0m11:28:33.027738 [info ] [MainThread]:   host: dpg-cultgn1u0jms73bglra0-a.oregon-postgres.render.com
+[0m11:28:33.041301 [info ] [MainThread]:   port: 5432
+[0m11:28:33.042563 [info ] [MainThread]:   user: galp_project_user
+[0m11:28:33.042563 [info ] [MainThread]:   database: galp_project
+[0m11:28:33.042563 [info ] [MainThread]:   schema: public
+[0m11:28:33.042563 [info ] [MainThread]:   connect_timeout: 10
+[0m11:28:33.042563 [info ] [MainThread]:   role: None
+[0m11:28:33.042563 [info ] [MainThread]:   search_path: None
+[0m11:28:33.042563 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:28:33.049625 [info ] [MainThread]:   sslmode: None
+[0m11:28:33.049625 [info ] [MainThread]:   sslcert: None
+[0m11:28:33.051357 [info ] [MainThread]:   sslkey: None
+[0m11:28:33.053418 [info ] [MainThread]:   sslrootcert: None
+[0m11:28:33.053418 [info ] [MainThread]:   application_name: dbt
+[0m11:28:33.053418 [info ] [MainThread]:   retries: 1
+[0m11:28:33.053418 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:28:33.303044 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:28:33.354361 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:28:33.354361 [debug] [MainThread]: On debug: select 1 as id
+[0m11:28:33.354361 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:28:34.890120 [debug] [MainThread]: SQL status: SELECT 1 in 1.526 seconds
+[0m11:28:34.892129 [debug] [MainThread]: On debug: Close
+[0m11:28:34.892129 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:28:34.892129 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:28:34.892129 [debug] [MainThread]: Command `dbt debug` succeeded at 11:28:34.892129 after 2.23 seconds
+[0m11:28:34.892129 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:28:34.892129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C44B66CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C450F1AC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C451491AD0>]}
+[0m11:28:34.892129 [debug] [MainThread]: Flushing usage events
+[0m11:28:35.916812 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:33:39.805357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEA9C6650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEA7ED7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEA7ED790>]}
+
+
+============================== 11:33:39.805357 | d6133b62-dcb1-4f9d-9561-adb63874254d ==============================
+[0m11:33:39.805357 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:33:39.805357 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:33:40.018454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd6133b62-dcb1-4f9d-9561-adb63874254d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEAD9A650>]}
+[0m11:33:40.082303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd6133b62-dcb1-4f9d-9561-adb63874254d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE69B86D0>]}
+[0m11:33:40.082303 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:33:40.332702 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:33:40.332702 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:33:40.332702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd6133b62-dcb1-4f9d-9561-adb63874254d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEB02AD10>]}
+[0m11:33:41.020044 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.galp_dbt_project.yearly_averages
+- models.galp_dbt_project
+[0m11:33:41.036902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd6133b62-dcb1-4f9d-9561-adb63874254d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEB247750>]}
+[0m11:33:41.071822 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:33:41.087851 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:33:41.114617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd6133b62-dcb1-4f9d-9561-adb63874254d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEB338A90>]}
+[0m11:33:41.114617 [info ] [MainThread]: Found 433 macros
+[0m11:33:41.114617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd6133b62-dcb1-4f9d-9561-adb63874254d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BEAD7F250>]}
+[0m11:33:41.114617 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:33:41.114617 [debug] [MainThread]: Command end result
+[0m11:33:41.137512 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:33:41.137512 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:33:41.137512 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:33:41.147561 [debug] [MainThread]: Command `dbt run` succeeded at 11:33:41.147561 after 1.43 seconds
+[0m11:33:41.148574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE526CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE5463ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020BE5463190>]}
+[0m11:33:41.148574 [debug] [MainThread]: Flushing usage events
+[0m11:33:42.086611 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:34:50.041382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534BBC66D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534BBC64D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534BBC6990>]}
+
+
+============================== 11:34:50.056500 | 2c8c3dd0-138b-4006-8c4e-5360a1630ca1 ==============================
+[0m11:34:50.056500 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:34:50.056500 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:34:50.075172 [info ] [MainThread]: dbt version: 1.9.2
+[0m11:34:50.079376 [info ] [MainThread]: python version: 3.11.9
+[0m11:34:50.079376 [info ] [MainThread]: python path: C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\venv\Scripts\python.exe
+[0m11:34:50.082179 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m11:34:50.139090 [info ] [MainThread]: Using profiles dir at C:\Users\isabe\.dbt
+[0m11:34:50.139090 [info ] [MainThread]: Using profiles.yml file at C:\Users\isabe\.dbt\profiles.yml
+[0m11:34:50.139090 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml
+[0m11:34:50.144128 [info ] [MainThread]: adapter type: postgres
+[0m11:34:50.145575 [info ] [MainThread]: adapter version: 1.9.0
+[0m11:34:50.227790 [info ] [MainThread]: Configuration:
+[0m11:34:50.227790 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:34:50.227790 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:34:50.234831 [info ] [MainThread]: Required dependencies:
+[0m11:34:50.235941 [debug] [MainThread]: Executing "git --help"
+[0m11:34:50.310934 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:34:50.311099 [debug] [MainThread]: STDERR: "b''"
+[0m11:34:50.311099 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:34:50.311099 [info ] [MainThread]: Connection:
+[0m11:34:50.311099 [info ] [MainThread]:   host: dpg-cultgn1u0jms73bglra0-a.oregon-postgres.render.com
+[0m11:34:50.311099 [info ] [MainThread]:   port: 5432
+[0m11:34:50.311099 [info ] [MainThread]:   user: galp_project_user
+[0m11:34:50.311099 [info ] [MainThread]:   database: galp_project
+[0m11:34:50.318109 [info ] [MainThread]:   schema: public
+[0m11:34:50.318109 [info ] [MainThread]:   connect_timeout: 10
+[0m11:34:50.318109 [info ] [MainThread]:   role: None
+[0m11:34:50.318109 [info ] [MainThread]:   search_path: None
+[0m11:34:50.321928 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:34:50.321928 [info ] [MainThread]:   sslmode: None
+[0m11:34:50.321928 [info ] [MainThread]:   sslcert: None
+[0m11:34:50.321928 [info ] [MainThread]:   sslkey: None
+[0m11:34:50.325199 [info ] [MainThread]:   sslrootcert: None
+[0m11:34:50.326761 [info ] [MainThread]:   application_name: dbt
+[0m11:34:50.326761 [info ] [MainThread]:   retries: 1
+[0m11:34:50.326761 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:34:50.544860 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:34:50.607337 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:34:50.607337 [debug] [MainThread]: On debug: select 1 as id
+[0m11:34:50.607337 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:34:52.127111 [debug] [MainThread]: SQL status: SELECT 1 in 1.515 seconds
+[0m11:34:52.127111 [debug] [MainThread]: On debug: Close
+[0m11:34:52.127111 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:34:52.127111 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:34:52.127111 [debug] [MainThread]: Command `dbt debug` succeeded at 11:34:52.127111 after 2.18 seconds
+[0m11:34:52.142741 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:34:52.142741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534646CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534B8F69D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002534666C3D0>]}
+[0m11:34:52.144944 [debug] [MainThread]: Flushing usage events
+[0m11:34:53.143617 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:34:57.725786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5FE1EFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5FE1F810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5F9ED610>]}
+
+
+============================== 11:34:57.732823 | dfab0056-defc-4965-8369-27a2ea24f4e0 ==============================
+[0m11:34:57.732823 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:34:57.733913 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:34:57.933307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dfab0056-defc-4965-8369-27a2ea24f4e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5FFDCF50>]}
+[0m11:34:57.973632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dfab0056-defc-4965-8369-27a2ea24f4e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5BCB8490>]}
+[0m11:34:57.973632 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:34:58.207330 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:34:58.254385 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:34:58.254385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dfab0056-defc-4965-8369-27a2ea24f4e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5F4F5A50>]}
+[0m11:34:58.930038 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.galp_dbt_project
+- models.galp_dbt_project.yearly_averages
+[0m11:34:58.930038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dfab0056-defc-4965-8369-27a2ea24f4e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5FFC0750>]}
+[0m11:34:58.977629 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:34:58.977629 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:34:58.994284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dfab0056-defc-4965-8369-27a2ea24f4e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D6042C690>]}
+[0m11:34:58.994284 [info ] [MainThread]: Found 433 macros
+[0m11:34:59.000868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dfab0056-defc-4965-8369-27a2ea24f4e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D604CB950>]}
+[0m11:34:59.002381 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:34:59.002381 [debug] [MainThread]: Command end result
+[0m11:34:59.019099 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:34:59.019099 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:34:59.019099 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:34:59.027494 [debug] [MainThread]: Command `dbt run` succeeded at 11:34:59.027182 after 1.41 seconds
+[0m11:34:59.028181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5A46CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5A663ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D5A663190>]}
+[0m11:34:59.028653 [debug] [MainThread]: Flushing usage events
+[0m11:34:59.903833 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:36:03.923222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C9C7210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C9C6D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C9C6850>]}
+
+
+============================== 11:36:03.923222 | eb7bcf42-018e-4061-a8f2-b0781fc51717 ==============================
+[0m11:36:03.923222 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:36:03.923222 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:36:04.128750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb7bcf42-018e-4061-a8f2-b0781fc51717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663CD9B490>]}
+[0m11:36:04.187207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eb7bcf42-018e-4061-a8f2-b0781fc51717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000266389B8850>]}
+[0m11:36:04.187207 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:36:04.493807 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:36:04.573891 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:36:04.573891 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:36:04.573891 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.galp_dbt_project.yearly_averages
+- models.galp_dbt_project
+[0m11:36:04.590046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eb7bcf42-018e-4061-a8f2-b0781fc51717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C68A210>]}
+[0m11:36:04.636260 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:36:04.638274 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:36:04.658889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eb7bcf42-018e-4061-a8f2-b0781fc51717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663D1CD350>]}
+[0m11:36:04.658889 [info ] [MainThread]: Found 433 macros
+[0m11:36:04.658889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb7bcf42-018e-4061-a8f2-b0781fc51717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663D250890>]}
+[0m11:36:04.668742 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:36:04.668742 [debug] [MainThread]: Command end result
+[0m11:36:04.686671 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:36:04.691629 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:36:04.693571 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:36:04.693571 [debug] [MainThread]: Command `dbt run` succeeded at 11:36:04.693571 after 0.86 seconds
+[0m11:36:04.693571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663726CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026637463ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026637463190>]}
+[0m11:36:04.693571 [debug] [MainThread]: Flushing usage events
+[0m11:36:05.586383 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:36:33.342046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8A72C6550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8A6ED9590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8A72FCB90>]}
+
+
+============================== 11:36:33.342046 | a75b0a98-3b11-4e05-a1e0-a797ffa37dae ==============================
+[0m11:36:33.342046 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:36:33.350213 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:36:33.363105 [info ] [MainThread]: dbt version: 1.9.2
+[0m11:36:33.363627 [info ] [MainThread]: python version: 3.11.9
+[0m11:36:33.364146 [info ] [MainThread]: python path: C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\venv\Scripts\python.exe
+[0m11:36:33.365190 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m11:36:33.431063 [info ] [MainThread]: Using profiles dir at C:\Users\isabe\.dbt
+[0m11:36:33.431063 [info ] [MainThread]: Using profiles.yml file at C:\Users\isabe\.dbt\profiles.yml
+[0m11:36:33.431063 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml
+[0m11:36:33.431063 [info ] [MainThread]: adapter type: postgres
+[0m11:36:33.431063 [info ] [MainThread]: adapter version: 1.9.0
+[0m11:36:33.531238 [info ] [MainThread]: Configuration:
+[0m11:36:33.531238 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:36:33.531238 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:36:33.531238 [info ] [MainThread]: Required dependencies:
+[0m11:36:33.537277 [debug] [MainThread]: Executing "git --help"
+[0m11:36:33.606410 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:36:33.607553 [debug] [MainThread]: STDERR: "b''"
+[0m11:36:33.608061 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:36:33.608061 [info ] [MainThread]: Connection:
+[0m11:36:33.608061 [info ] [MainThread]:   host: dpg-cultgn1u0jms73bglra0-a.oregon-postgres.render.com
+[0m11:36:33.611409 [info ] [MainThread]:   port: 5432
+[0m11:36:33.611409 [info ] [MainThread]:   user: galp_project_user
+[0m11:36:33.611409 [info ] [MainThread]:   database: galp_project
+[0m11:36:33.611409 [info ] [MainThread]:   schema: public
+[0m11:36:33.611409 [info ] [MainThread]:   connect_timeout: 10
+[0m11:36:33.614562 [info ] [MainThread]:   role: None
+[0m11:36:33.615482 [info ] [MainThread]:   search_path: None
+[0m11:36:33.615482 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:36:33.616575 [info ] [MainThread]:   sslmode: None
+[0m11:36:33.617082 [info ] [MainThread]:   sslcert: None
+[0m11:36:33.617082 [info ] [MainThread]:   sslkey: None
+[0m11:36:33.617082 [info ] [MainThread]:   sslrootcert: None
+[0m11:36:33.617082 [info ] [MainThread]:   application_name: dbt
+[0m11:36:33.617082 [info ] [MainThread]:   retries: 1
+[0m11:36:33.617082 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:36:33.846640 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:36:33.917121 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:36:33.917121 [debug] [MainThread]: On debug: select 1 as id
+[0m11:36:33.919812 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:36:35.338369 [debug] [MainThread]: SQL status: SELECT 1 in 1.431 seconds
+[0m11:36:35.354074 [debug] [MainThread]: On debug: Close
+[0m11:36:35.354074 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:36:35.354074 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:36:35.354074 [debug] [MainThread]: Command `dbt debug` succeeded at 11:36:35.354074 after 2.11 seconds
+[0m11:36:35.354074 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:36:35.354074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8A731AC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8A197CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8A6EED150>]}
+[0m11:36:35.354074 [debug] [MainThread]: Flushing usage events
+[0m11:36:36.375079 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:36:40.999142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7D101F850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7D0DC6A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7D1002010>]}
+
+
+============================== 11:36:41.014829 | b23b2b53-6fea-4c58-946c-3153caa19e75 ==============================
+[0m11:36:41.014829 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:36:41.014829 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:36:41.197676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b23b2b53-6fea-4c58-946c-3153caa19e75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7D115D2D0>]}
+[0m11:36:41.268956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b23b2b53-6fea-4c58-946c-3153caa19e75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7CCEB83D0>]}
+[0m11:36:41.269983 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:36:41.503703 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:36:41.582617 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:36:41.582617 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:36:41.582617 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.galp_dbt_project
+- models.galp_dbt_project.yearly_averages
+[0m11:36:41.593259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b23b2b53-6fea-4c58-946c-3153caa19e75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7D1658490>]}
+[0m11:36:41.632252 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:36:41.632252 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:36:41.661622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b23b2b53-6fea-4c58-946c-3153caa19e75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7D1642590>]}
+[0m11:36:41.661622 [info ] [MainThread]: Found 433 macros
+[0m11:36:41.663422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b23b2b53-6fea-4c58-946c-3153caa19e75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7D0DC7DD0>]}
+[0m11:36:41.663422 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:36:41.663422 [debug] [MainThread]: Command end result
+[0m11:36:41.681461 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:36:41.681461 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:36:41.681461 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:36:41.681461 [debug] [MainThread]: Command `dbt run` succeeded at 11:36:41.681461 after 0.77 seconds
+[0m11:36:41.692475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7CB66CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7CB863ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7CB863190>]}
+[0m11:36:41.692475 [debug] [MainThread]: Flushing usage events
+[0m11:36:42.716912 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:37:41.245397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B26C1F250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B269FE410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B26C1F850>]}
+
+
+============================== 11:37:41.245397 | c8bd972c-3ee8-42ad-8aac-1f9e1fadc13f ==============================
+[0m11:37:41.245397 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:37:41.245397 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:37:41.418942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8bd972c-3ee8-42ad-8aac-1f9e1fadc13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B26C43A90>]}
+[0m11:37:41.465827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8bd972c-3ee8-42ad-8aac-1f9e1fadc13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B229B8BD0>]}
+[0m11:37:41.465827 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:37:41.731348 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:37:41.781496 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:37:41.781496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c8bd972c-3ee8-42ad-8aac-1f9e1fadc13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B253E2510>]}
+[0m11:37:42.422064 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.galp_dbt_project
+- models.galp_dbt_project.yearly_averages
+[0m11:37:42.429106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8bd972c-3ee8-42ad-8aac-1f9e1fadc13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B22997A10>]}
+[0m11:37:42.473349 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:37:42.478950 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:37:42.500800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8bd972c-3ee8-42ad-8aac-1f9e1fadc13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B273B8450>]}
+[0m11:37:42.501425 [info ] [MainThread]: Found 433 macros
+[0m11:37:42.502077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8bd972c-3ee8-42ad-8aac-1f9e1fadc13f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B272DD1D0>]}
+[0m11:37:42.503831 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:37:42.505141 [debug] [MainThread]: Command end result
+[0m11:37:42.521570 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:37:42.525100 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:37:42.529279 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:37:42.530446 [debug] [MainThread]: Command `dbt run` succeeded at 11:37:42.530446 after 1.37 seconds
+[0m11:37:42.531074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B2126CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B21325F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B225787D0>]}
+[0m11:37:42.531584 [debug] [MainThread]: Flushing usage events
+[0m11:37:43.550096 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:38:12.210903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186384FE190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186384FCAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186384FE4D0>]}
+
+
+============================== 11:38:12.210903 | 687357a3-418d-45ce-9b2b-8ee132fc53c7 ==============================
+[0m11:38:12.210903 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:38:12.210903 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt list', 'send_anonymous_usage_stats': 'True'}
+[0m11:38:12.441364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '687357a3-418d-45ce-9b2b-8ee132fc53c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018638631950>]}
+[0m11:38:12.513502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '687357a3-418d-45ce-9b2b-8ee132fc53c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018638510C90>]}
+[0m11:38:12.515786 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:38:12.807812 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:38:12.901950 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:38:12.901950 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:38:12.918124 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.galp_dbt_project
+- models.galp_dbt_project.yearly_averages
+[0m11:38:12.918124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '687357a3-418d-45ce-9b2b-8ee132fc53c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018638B6C390>]}
+[0m11:38:12.964400 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:38:12.964400 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:38:12.987044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '687357a3-418d-45ce-9b2b-8ee132fc53c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018638B55A90>]}
+[0m11:38:12.987044 [warn ] [MainThread]: No nodes selected!
+[0m11:38:12.996054 [debug] [MainThread]: Command `dbt list` succeeded at 11:38:12.987044 after 0.90 seconds
+[0m11:38:12.996054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018632B6CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018633013210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018633013ED0>]}
+[0m11:38:12.996054 [debug] [MainThread]: Flushing usage events
+[0m11:38:13.811048 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:42:18.748084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002117DC25010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002117D9C5050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002117DC26C50>]}
+
+
+============================== 11:42:18.753683 | 726cf0e0-4885-45d6-888d-7b03435e2604 ==============================
+[0m11:42:18.753683 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:42:18.753683 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:18.753683 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:42:18.753683 [debug] [MainThread]: Command `dbt run` failed at 11:42:18.753683 after 0.10 seconds
+[0m11:42:18.753683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002117836CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002117DC1EB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021178813DD0>]}
+[0m11:42:18.753683 [debug] [MainThread]: Flushing usage events
+[0m11:42:19.721157 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:42:30.936134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5245C6350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D52481F8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D52481EDD0>]}
+
+
+============================== 11:42:30.939307 | affc2168-56f3-41ee-a38b-232ca90c2f69 ==============================
+[0m11:42:30.939307 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:42:30.939307 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:31.106348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'affc2168-56f3-41ee-a38b-232ca90c2f69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5245CA590>]}
+[0m11:42:31.153724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'affc2168-56f3-41ee-a38b-232ca90c2f69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5205B8590>]}
+[0m11:42:31.153724 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:42:31.431649 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:42:31.469969 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:42:31.471551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'affc2168-56f3-41ee-a38b-232ca90c2f69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D523EF99D0>]}
+[0m11:42:32.126976 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.galp_dbt_project
+- models.galp_dbt_project.yearly_average
+[0m11:42:32.142891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'affc2168-56f3-41ee-a38b-232ca90c2f69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5249A79D0>]}
+[0m11:42:32.187679 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:42:32.193409 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:42:32.212498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'affc2168-56f3-41ee-a38b-232ca90c2f69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D524FA7DD0>]}
+[0m11:42:32.213084 [info ] [MainThread]: Found 433 macros
+[0m11:42:32.213588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'affc2168-56f3-41ee-a38b-232ca90c2f69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D524F1C850>]}
+[0m11:42:32.215135 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:42:32.216660 [debug] [MainThread]: Command end result
+[0m11:42:32.236663 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:42:32.236663 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:42:32.236663 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:42:32.236663 [debug] [MainThread]: Command `dbt run` succeeded at 11:42:32.236663 after 1.39 seconds
+[0m11:42:32.236663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51EE6CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51EF25F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5243EDC50>]}
+[0m11:42:32.236663 [debug] [MainThread]: Flushing usage events
+[0m11:42:33.228515 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:43:14.465056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DBD79C5D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DBD79FC210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DBD79FC310>]}
+
+
+============================== 11:43:14.479762 | 207fc089-2ad8-4bf8-a106-4b294b961179 ==============================
+[0m11:43:14.479762 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:43:14.482868 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:43:14.498665 [info ] [MainThread]: dbt version: 1.9.2
+[0m11:43:14.498665 [info ] [MainThread]: python version: 3.11.9
+[0m11:43:14.502687 [info ] [MainThread]: python path: C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\venv\Scripts\python.exe
+[0m11:43:14.502687 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m11:43:14.569385 [info ] [MainThread]: Using profiles dir at C:\Users\isabe\.dbt
+[0m11:43:14.569385 [info ] [MainThread]: Using profiles.yml file at C:\Users\isabe\.dbt\profiles.yml
+[0m11:43:14.579620 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\dbt_project.yml
+[0m11:43:14.581083 [info ] [MainThread]: adapter type: postgres
+[0m11:43:14.581680 [info ] [MainThread]: adapter version: 1.9.0
+[0m11:43:14.697512 [info ] [MainThread]: Configuration:
+[0m11:43:14.697512 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:43:14.697512 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:43:14.697512 [info ] [MainThread]: Required dependencies:
+[0m11:43:14.697512 [debug] [MainThread]: Executing "git --help"
+[0m11:43:14.777940 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:43:14.779078 [debug] [MainThread]: STDERR: "b''"
+[0m11:43:14.780375 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:43:14.781412 [info ] [MainThread]: Connection:
+[0m11:43:14.782470 [info ] [MainThread]:   host: dpg-cultgn1u0jms73bglra0-a.oregon-postgres.render.com
+[0m11:43:14.783606 [info ] [MainThread]:   port: 5432
+[0m11:43:14.784113 [info ] [MainThread]:   user: galp_project_user
+[0m11:43:14.785166 [info ] [MainThread]:   database: galp_project
+[0m11:43:14.785814 [info ] [MainThread]:   schema: public
+[0m11:43:14.786857 [info ] [MainThread]:   connect_timeout: 10
+[0m11:43:14.787449 [info ] [MainThread]:   role: None
+[0m11:43:14.788531 [info ] [MainThread]:   search_path: None
+[0m11:43:14.789105 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:43:14.789662 [info ] [MainThread]:   sslmode: None
+[0m11:43:14.790166 [info ] [MainThread]:   sslcert: None
+[0m11:43:14.790687 [info ] [MainThread]:   sslkey: None
+[0m11:43:14.791734 [info ] [MainThread]:   sslrootcert: None
+[0m11:43:14.792256 [info ] [MainThread]:   application_name: dbt
+[0m11:43:14.792913 [info ] [MainThread]:   retries: 1
+[0m11:43:14.793923 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:43:15.043202 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:43:15.098176 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:43:15.098176 [debug] [MainThread]: On debug: select 1 as id
+[0m11:43:15.098176 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:43:16.547725 [debug] [MainThread]: SQL status: SELECT 1 in 1.452 seconds
+[0m11:43:16.554825 [debug] [MainThread]: On debug: Close
+[0m11:43:16.554825 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:43:16.554825 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:43:16.554825 [debug] [MainThread]: Command `dbt debug` succeeded at 11:43:16.554825 after 2.19 seconds
+[0m11:43:16.563710 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:43:16.565929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DBD227CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DBD7C1A910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DBD818DF50>]}
+[0m11:43:16.566231 [debug] [MainThread]: Flushing usage events
+[0m11:43:17.578510 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:43:22.879614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC1C6890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC1C6590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC1C5D90>]}
+
+
+============================== 11:43:22.880099 | 6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f ==============================
+[0m11:43:22.880099 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:43:22.880099 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:43:23.048367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC4BFF50>]}
+[0m11:43:23.120319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCC82B8550>]}
+[0m11:43:23.120319 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:43:23.389629 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:43:23.481599 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:43:23.481599 [debug] [MainThread]: Partial parsing: added file: galp_dbt_project://models\yearly_average.sql
+[0m11:43:23.715077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC5DB4D0>]}
+[0m11:43:23.759467 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:43:23.759467 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:43:23.775102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCCF88F90>]}
+[0m11:43:23.775102 [info ] [MainThread]: Found 1 model, 433 macros
+[0m11:43:23.775102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC9A22D0>]}
+[0m11:43:23.775102 [info ] [MainThread]: 
+[0m11:43:23.775102 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:43:23.775102 [info ] [MainThread]: 
+[0m11:43:23.775102 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:43:23.796076 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project'
+[0m11:43:23.861997 [debug] [ThreadPool]: Using postgres connection "list_galp_project"
+[0m11:43:23.861997 [debug] [ThreadPool]: On list_galp_project: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:43:23.861997 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:43:25.455580 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.602 seconds
+[0m11:43:25.471177 [debug] [ThreadPool]: On list_galp_project: Close
+[0m11:43:25.471177 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_galp_project, now create_galp_project_public_public)
+[0m11:43:25.471177 [debug] [ThreadPool]: Creating schema "database: "galp_project"
+schema: "public_public"
+"
+[0m11:43:25.486796 [debug] [ThreadPool]: Using postgres connection "create_galp_project_public_public"
+[0m11:43:25.486796 [debug] [ThreadPool]: On create_galp_project_public_public: BEGIN
+[0m11:43:25.486796 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:43:27.004205 [debug] [ThreadPool]: SQL status: BEGIN in 1.515 seconds
+[0m11:43:27.004205 [debug] [ThreadPool]: Using postgres connection "create_galp_project_public_public"
+[0m11:43:27.004205 [debug] [ThreadPool]: On create_galp_project_public_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "create_galp_project_public_public"} */
+create schema if not exists "public_public"
+[0m11:43:27.208161 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.202 seconds
+[0m11:43:27.211021 [debug] [ThreadPool]: On create_galp_project_public_public: COMMIT
+[0m11:43:27.211021 [debug] [ThreadPool]: Using postgres connection "create_galp_project_public_public"
+[0m11:43:27.211021 [debug] [ThreadPool]: On create_galp_project_public_public: COMMIT
+[0m11:43:27.395764 [debug] [ThreadPool]: SQL status: COMMIT in 0.195 seconds
+[0m11:43:27.395764 [debug] [ThreadPool]: On create_galp_project_public_public: Close
+[0m11:43:27.411642 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project_public_public'
+[0m11:43:27.411642 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:43:27.411642 [debug] [ThreadPool]: On list_galp_project_public_public: BEGIN
+[0m11:43:27.411642 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:43:28.956982 [debug] [ThreadPool]: SQL status: BEGIN in 1.533 seconds
+[0m11:43:28.956982 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:43:28.956982 [debug] [ThreadPool]: On list_galp_project_public_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project_public_public"} */
+select
+      'galp_project' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_public'
+  
+[0m11:43:29.138381 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.191 seconds
+[0m11:43:29.151996 [debug] [ThreadPool]: On list_galp_project_public_public: ROLLBACK
+[0m11:43:29.341762 [debug] [ThreadPool]: On list_galp_project_public_public: Close
+[0m11:43:29.357502 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:29.357502 [debug] [MainThread]: On master: BEGIN
+[0m11:43:29.357502 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:43:30.987816 [debug] [MainThread]: SQL status: BEGIN in 1.628 seconds
+[0m11:43:30.987816 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:30.987816 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:43:31.191862 [debug] [MainThread]: SQL status: SELECT 0 in 0.205 seconds
+[0m11:43:31.191862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC82E110>]}
+[0m11:43:31.191862 [debug] [MainThread]: On master: ROLLBACK
+[0m11:43:31.394705 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:31.394705 [debug] [MainThread]: On master: BEGIN
+[0m11:43:31.811606 [debug] [MainThread]: SQL status: BEGIN in 0.408 seconds
+[0m11:43:31.812284 [debug] [MainThread]: On master: COMMIT
+[0m11:43:31.812790 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:31.813332 [debug] [MainThread]: On master: COMMIT
+[0m11:43:32.032139 [debug] [MainThread]: SQL status: COMMIT in 0.218 seconds
+[0m11:43:32.032643 [debug] [MainThread]: On master: Close
+[0m11:43:32.039306 [debug] [Thread-1 (]: Began running node model.galp_dbt_project.yearly_average
+[0m11:43:32.039306 [info ] [Thread-1 (]: 1 of 1 START sql table model public_public.yearly_average ...................... [RUN]
+[0m11:43:32.039306 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.galp_dbt_project.yearly_average'
+[0m11:43:32.039306 [debug] [Thread-1 (]: Began compiling node model.galp_dbt_project.yearly_average
+[0m11:43:32.039306 [debug] [Thread-1 (]: Writing injected SQL for node "model.galp_dbt_project.yearly_average"
+[0m11:43:32.054272 [debug] [Thread-1 (]: Began executing node model.galp_dbt_project.yearly_average
+[0m11:43:32.115767 [debug] [Thread-1 (]: Writing runtime sql for node "model.galp_dbt_project.yearly_average"
+[0m11:43:32.118784 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:43:32.118784 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: BEGIN
+[0m11:43:32.118784 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:43:33.656075 [debug] [Thread-1 (]: SQL status: BEGIN in 1.531 seconds
+[0m11:43:33.657717 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:43:33.658729 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+
+  
+    
+
+  create  table "galp_project"."public_public"."yearly_average__dbt_tmp"
+  
+  
+    as
+  
+  (
+    WITH yearly_data AS (
+    SELECT 
+        DATE_PART('year', date) AS year,
+        AVG(open) AS avg_open,
+        AVG(high) AS avg_high,
+        AVG(low) AS avg_low,
+        AVG(close) AS avg_close,
+        AVG(adjusted_close) AS avg_adjusted_close,
+        AVG(volume) AS avg_volume,
+        AVG(dividend_amount) AS avg_dividend
+    FROM public.monthly_adjusted_data
+    GROUP BY year
+    ORDER BY year
+)
+SELECT * FROM yearly_data;
+  );
+  
+[0m11:43:33.861007 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near ";"
+LINE 26: SELECT * FROM yearly_data;
+                                  ^
+
+[0m11:43:33.861007 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: ROLLBACK
+[0m11:43:34.054053 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: Close
+[0m11:43:34.069797 [debug] [Thread-1 (]: Database Error in model yearly_average (models\yearly_average.sql)
+  syntax error at or near ";"
+  LINE 26: SELECT * FROM yearly_data;
+                                    ^
+  compiled code at target\run\galp_dbt_project\models\yearly_average.sql
+[0m11:43:34.069797 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1b0d5d-72d2-4528-aa2f-e8f8016c9c7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC424250>]}
+[0m11:43:34.069797 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model public_public.yearly_average ............. [[31mERROR[0m in 2.03s]
+[0m11:43:34.069797 [debug] [Thread-1 (]: Finished running node model.galp_dbt_project.yearly_average
+[0m11:43:34.069797 [debug] [Thread-7 (]: Marking all children of 'model.galp_dbt_project.yearly_average' to be skipped because of status 'error'.  Reason: Database Error in model yearly_average (models\yearly_average.sql)
+  syntax error at or near ";"
+  LINE 26: SELECT * FROM yearly_data;
+                                    ^
+  compiled code at target\run\galp_dbt_project\models\yearly_average.sql.
+[0m11:43:34.091190 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:34.091190 [debug] [MainThread]: On master: BEGIN
+[0m11:43:34.093766 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:43:35.600668 [debug] [MainThread]: SQL status: BEGIN in 1.507 seconds
+[0m11:43:35.600668 [debug] [MainThread]: On master: COMMIT
+[0m11:43:35.600668 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:35.600668 [debug] [MainThread]: On master: COMMIT
+[0m11:43:35.789321 [debug] [MainThread]: SQL status: COMMIT in 0.198 seconds
+[0m11:43:35.804973 [debug] [MainThread]: On master: Close
+[0m11:43:35.805844 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:43:35.805844 [debug] [MainThread]: Connection 'create_galp_project_public_public' was properly closed.
+[0m11:43:35.805844 [debug] [MainThread]: Connection 'list_galp_project_public_public' was properly closed.
+[0m11:43:35.809148 [debug] [MainThread]: Connection 'model.galp_dbt_project.yearly_average' was properly closed.
+[0m11:43:35.809148 [info ] [MainThread]: 
+[0m11:43:35.810309 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 12.03 seconds (12.03s).
+[0m11:43:35.810309 [debug] [MainThread]: Command end result
+[0m11:43:35.836707 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:43:35.836707 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:43:35.848670 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:43:35.848670 [info ] [MainThread]: 
+[0m11:43:35.848670 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:43:35.848670 [info ] [MainThread]: 
+[0m11:43:35.848670 [error] [MainThread]:   Database Error in model yearly_average (models\yearly_average.sql)
+  syntax error at or near ";"
+  LINE 26: SELECT * FROM yearly_data;
+                                    ^
+  compiled code at target\run\galp_dbt_project\models\yearly_average.sql
+[0m11:43:35.848670 [info ] [MainThread]: 
+[0m11:43:35.848670 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m11:43:35.848670 [debug] [MainThread]: Command `dbt run` failed at 11:43:35.848670 after 13.08 seconds
+[0m11:43:35.848670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCC6B6CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCC7013ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCCC0C1DD0>]}
+[0m11:43:35.848670 [debug] [MainThread]: Flushing usage events
+[0m11:43:36.826677 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:43:49.309139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E556C6B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E55701790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E55701D50>]}
+
+
+============================== 11:43:49.317040 | 6c9c2eec-c949-4df3-b46b-298556741f3d ==============================
+[0m11:43:49.317040 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:43:49.318169 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:43:49.479646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6c9c2eec-c949-4df3-b46b-298556741f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E5582EE50>]}
+[0m11:43:49.533888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6c9c2eec-c949-4df3-b46b-298556741f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E515B8290>]}
+[0m11:43:49.533888 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:43:49.793366 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:43:49.894292 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:43:49.894292 [debug] [MainThread]: Partial parsing: updated file: galp_dbt_project://models\yearly_average.sql
+[0m11:43:50.130163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6c9c2eec-c949-4df3-b46b-298556741f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E560B8510>]}
+[0m11:43:50.176921 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:43:50.176921 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:43:50.192583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6c9c2eec-c949-4df3-b46b-298556741f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E56479450>]}
+[0m11:43:50.192583 [info ] [MainThread]: Found 1 model, 433 macros
+[0m11:43:50.192583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c9c2eec-c949-4df3-b46b-298556741f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E561FCC90>]}
+[0m11:43:50.192583 [info ] [MainThread]: 
+[0m11:43:50.192583 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:43:50.208185 [info ] [MainThread]: 
+[0m11:43:50.208185 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:43:50.210097 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project'
+[0m11:43:50.275098 [debug] [ThreadPool]: Using postgres connection "list_galp_project"
+[0m11:43:50.275098 [debug] [ThreadPool]: On list_galp_project: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:43:50.275098 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:43:51.878420 [debug] [ThreadPool]: SQL status: SELECT 5 in 1.605 seconds
+[0m11:43:51.878420 [debug] [ThreadPool]: On list_galp_project: Close
+[0m11:43:51.878420 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project_public_public'
+[0m11:43:51.894147 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:43:51.894147 [debug] [ThreadPool]: On list_galp_project_public_public: BEGIN
+[0m11:43:51.894147 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:43:53.508388 [debug] [ThreadPool]: SQL status: BEGIN in 1.619 seconds
+[0m11:43:53.508388 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:43:53.508388 [debug] [ThreadPool]: On list_galp_project_public_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project_public_public"} */
+select
+      'galp_project' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_public'
+  
+[0m11:43:53.725890 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.205 seconds
+[0m11:43:53.725890 [debug] [ThreadPool]: On list_galp_project_public_public: ROLLBACK
+[0m11:43:53.914203 [debug] [ThreadPool]: On list_galp_project_public_public: Close
+[0m11:43:53.929810 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:53.929810 [debug] [MainThread]: On master: BEGIN
+[0m11:43:53.929810 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:43:55.450522 [debug] [MainThread]: SQL status: BEGIN in 1.529 seconds
+[0m11:43:55.466041 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:55.466041 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:43:55.670579 [debug] [MainThread]: SQL status: SELECT 0 in 0.204 seconds
+[0m11:43:55.670579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c9c2eec-c949-4df3-b46b-298556741f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E558F5F50>]}
+[0m11:43:55.670579 [debug] [MainThread]: On master: ROLLBACK
+[0m11:43:55.874690 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:55.875246 [debug] [MainThread]: On master: BEGIN
+[0m11:43:56.284339 [debug] [MainThread]: SQL status: BEGIN in 0.409 seconds
+[0m11:43:56.285872 [debug] [MainThread]: On master: COMMIT
+[0m11:43:56.285872 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:56.285872 [debug] [MainThread]: On master: COMMIT
+[0m11:43:56.488469 [debug] [MainThread]: SQL status: COMMIT in 0.201 seconds
+[0m11:43:56.488469 [debug] [MainThread]: On master: Close
+[0m11:43:56.488469 [debug] [Thread-1 (]: Began running node model.galp_dbt_project.yearly_average
+[0m11:43:56.488469 [info ] [Thread-1 (]: 1 of 1 START sql table model public_public.yearly_average ...................... [RUN]
+[0m11:43:56.488469 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.galp_dbt_project.yearly_average'
+[0m11:43:56.488469 [debug] [Thread-1 (]: Began compiling node model.galp_dbt_project.yearly_average
+[0m11:43:56.509055 [debug] [Thread-1 (]: Writing injected SQL for node "model.galp_dbt_project.yearly_average"
+[0m11:43:56.511360 [debug] [Thread-1 (]: Began executing node model.galp_dbt_project.yearly_average
+[0m11:43:56.558540 [debug] [Thread-1 (]: Writing runtime sql for node "model.galp_dbt_project.yearly_average"
+[0m11:43:56.558540 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:43:56.558540 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: BEGIN
+[0m11:43:56.558540 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:43:58.120429 [debug] [Thread-1 (]: SQL status: BEGIN in 1.564 seconds
+[0m11:43:58.130545 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:43:58.130545 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+
+  
+    
+
+  create  table "galp_project"."public_public"."yearly_average__dbt_tmp"
+  
+  
+    as
+  
+  (
+    WITH yearly_data AS (
+    SELECT 
+        DATE_PART('year', date) AS year,
+        AVG(open) AS avg_open,
+        AVG(high) AS avg_high,
+        AVG(low) AS avg_low,
+        AVG(close) AS avg_close,
+        AVG(adjusted_close) AS avg_adjusted_close,
+        AVG(volume) AS avg_volume,
+        AVG(dividend_amount) AS avg_dividend
+    FROM public.monthly_adjusted_data
+    GROUP BY year
+    ORDER BY year
+)
+SELECT * FROM yearly_data
+  );
+  
+[0m11:43:58.322905 [debug] [Thread-1 (]: SQL status: SELECT 20 in 0.199 seconds
+[0m11:43:58.338530 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:43:58.338530 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+alter table "galp_project"."public_public"."yearly_average__dbt_tmp" rename to "yearly_average"
+[0m11:43:58.532119 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.194 seconds
+[0m11:43:58.557509 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:43:58.557509 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:43:58.557509 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:43:58.742132 [debug] [Thread-1 (]: SQL status: COMMIT in 0.180 seconds
+[0m11:43:58.747153 [debug] [Thread-1 (]: Applying DROP to: "galp_project"."public_public"."yearly_average__dbt_backup"
+[0m11:43:58.757428 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:43:58.757428 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+drop table if exists "galp_project"."public_public"."yearly_average__dbt_backup" cascade
+[0m11:43:58.947262 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.189 seconds
+[0m11:43:58.947262 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: Close
+[0m11:43:58.947262 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c9c2eec-c949-4df3-b46b-298556741f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E567D3650>]}
+[0m11:43:58.947262 [info ] [Thread-1 (]: 1 of 1 OK created sql table model public_public.yearly_average ................. [[32mSELECT 20[0m in 2.46s]
+[0m11:43:58.947262 [debug] [Thread-1 (]: Finished running node model.galp_dbt_project.yearly_average
+[0m11:43:58.961882 [debug] [MainThread]: Using postgres connection "master"
+[0m11:43:58.961882 [debug] [MainThread]: On master: BEGIN
+[0m11:43:58.961882 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:44:00.581554 [debug] [MainThread]: SQL status: BEGIN in 1.621 seconds
+[0m11:44:00.581554 [debug] [MainThread]: On master: COMMIT
+[0m11:44:00.581554 [debug] [MainThread]: Using postgres connection "master"
+[0m11:44:00.581554 [debug] [MainThread]: On master: COMMIT
+[0m11:44:00.788832 [debug] [MainThread]: SQL status: COMMIT in 0.200 seconds
+[0m11:44:00.788832 [debug] [MainThread]: On master: Close
+[0m11:44:00.788832 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:44:00.788832 [debug] [MainThread]: Connection 'list_galp_project' was properly closed.
+[0m11:44:00.788832 [debug] [MainThread]: Connection 'list_galp_project_public_public' was properly closed.
+[0m11:44:00.788832 [debug] [MainThread]: Connection 'model.galp_dbt_project.yearly_average' was properly closed.
+[0m11:44:00.796840 [info ] [MainThread]: 
+[0m11:44:00.797925 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 10.58 seconds (10.58s).
+[0m11:44:00.799783 [debug] [MainThread]: Command end result
+[0m11:44:00.820160 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:44:00.823057 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:44:00.833092 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:44:00.833680 [info ] [MainThread]: 
+[0m11:44:00.834725 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:44:00.835886 [info ] [MainThread]: 
+[0m11:44:00.836479 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:44:00.838292 [debug] [MainThread]: Command `dbt run` succeeded at 11:44:00.838292 after 11.63 seconds
+[0m11:44:00.839423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E4FD6CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E55D9FA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E50213190>]}
+[0m11:44:00.840166 [debug] [MainThread]: Flushing usage events
+[0m11:44:01.814492 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:49:13.316115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01C51ECD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01C51F210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01C500CD0>]}
+
+
+============================== 11:49:13.316115 | 57e6c947-15d8-4b52-8968-308833e66202 ==============================
+[0m11:49:13.316115 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:49:13.316115 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:49:13.521999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01C65BA10>]}
+[0m11:49:13.578409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0183B8AD0>]}
+[0m11:49:13.594029 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:49:13.840545 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:49:13.888938 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:49:13.888938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01BBF5990>]}
+[0m11:49:14.697613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01CF5C290>]}
+[0m11:49:14.760196 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:49:14.765709 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:49:14.825368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01CED2D90>]}
+[0m11:49:14.825368 [info ] [MainThread]: Found 1 model, 433 macros
+[0m11:49:14.825368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01CF8F0D0>]}
+[0m11:49:14.825368 [info ] [MainThread]: 
+[0m11:49:14.825368 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:49:14.825368 [info ] [MainThread]: 
+[0m11:49:14.825368 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:49:14.835684 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project'
+[0m11:49:14.929829 [debug] [ThreadPool]: Using postgres connection "list_galp_project"
+[0m11:49:14.930404 [debug] [ThreadPool]: On list_galp_project: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:49:14.930404 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:49:16.482081 [debug] [ThreadPool]: SQL status: SELECT 5 in 1.560 seconds
+[0m11:49:16.482081 [debug] [ThreadPool]: On list_galp_project: Close
+[0m11:49:16.482081 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project_public_public'
+[0m11:49:16.499714 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:49:16.499714 [debug] [ThreadPool]: On list_galp_project_public_public: BEGIN
+[0m11:49:16.499714 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:49:18.014251 [debug] [ThreadPool]: SQL status: BEGIN in 1.517 seconds
+[0m11:49:18.014251 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:49:18.014251 [debug] [ThreadPool]: On list_galp_project_public_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project_public_public"} */
+select
+      'galp_project' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_public'
+  
+[0m11:49:18.219631 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.203 seconds
+[0m11:49:18.233168 [debug] [ThreadPool]: On list_galp_project_public_public: ROLLBACK
+[0m11:49:18.428427 [debug] [ThreadPool]: On list_galp_project_public_public: Close
+[0m11:49:18.428427 [debug] [MainThread]: Using postgres connection "master"
+[0m11:49:18.428427 [debug] [MainThread]: On master: BEGIN
+[0m11:49:18.441152 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:49:19.973751 [debug] [MainThread]: SQL status: BEGIN in 1.533 seconds
+[0m11:49:19.974372 [debug] [MainThread]: Using postgres connection "master"
+[0m11:49:19.975471 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:49:20.161652 [debug] [MainThread]: SQL status: SELECT 0 in 0.199 seconds
+[0m11:49:20.177034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01D3E1FD0>]}
+[0m11:49:20.177542 [debug] [MainThread]: On master: ROLLBACK
+[0m11:49:20.366504 [debug] [MainThread]: Using postgres connection "master"
+[0m11:49:20.366504 [debug] [MainThread]: On master: BEGIN
+[0m11:49:20.742823 [debug] [MainThread]: SQL status: BEGIN in 0.365 seconds
+[0m11:49:20.742823 [debug] [MainThread]: On master: COMMIT
+[0m11:49:20.742823 [debug] [MainThread]: Using postgres connection "master"
+[0m11:49:20.742823 [debug] [MainThread]: On master: COMMIT
+[0m11:49:20.993309 [debug] [MainThread]: SQL status: COMMIT in 0.245 seconds
+[0m11:49:20.993898 [debug] [MainThread]: On master: Close
+[0m11:49:20.999186 [debug] [Thread-1 (]: Began running node model.galp_dbt_project.yearly_average
+[0m11:49:20.999999 [info ] [Thread-1 (]: 1 of 1 START sql table model public_public.yearly_average ...................... [RUN]
+[0m11:49:20.999999 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.galp_dbt_project.yearly_average'
+[0m11:49:21.002306 [debug] [Thread-1 (]: Began compiling node model.galp_dbt_project.yearly_average
+[0m11:49:21.011574 [debug] [Thread-1 (]: Writing injected SQL for node "model.galp_dbt_project.yearly_average"
+[0m11:49:21.013112 [debug] [Thread-1 (]: Began executing node model.galp_dbt_project.yearly_average
+[0m11:49:21.054138 [debug] [Thread-1 (]: Writing runtime sql for node "model.galp_dbt_project.yearly_average"
+[0m11:49:21.064750 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:49:21.066147 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: BEGIN
+[0m11:49:21.066147 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:49:22.728870 [debug] [Thread-1 (]: SQL status: BEGIN in 1.668 seconds
+[0m11:49:22.736241 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:49:22.736241 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+
+  
+    
+
+  create  table "galp_project"."public_public"."yearly_average__dbt_tmp"
+  
+  
+    as
+  
+  (
+    WITH yearly_data AS (
+    SELECT 
+        DATE_PART('year', date) AS year,
+        AVG(open) AS avg_open,
+        AVG(high) AS avg_high,
+        AVG(low) AS avg_low,
+        AVG(close) AS avg_close,
+        AVG(adjusted_close) AS avg_adjusted_close,
+        AVG(volume) AS avg_volume,
+        AVG(dividend_amount) AS avg_dividend
+    FROM public.monthly_adjusted_data
+    GROUP BY year
+    ORDER BY year
+)
+SELECT * FROM yearly_data
+  );
+  
+[0m11:49:22.942200 [debug] [Thread-1 (]: SQL status: SELECT 20 in 0.204 seconds
+[0m11:49:22.950091 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:49:22.951901 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+alter table "galp_project"."public_public"."yearly_average" rename to "yearly_average__dbt_backup"
+[0m11:49:23.156916 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.204 seconds
+[0m11:49:23.161603 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:49:23.162644 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+alter table "galp_project"."public_public"."yearly_average__dbt_tmp" rename to "yearly_average"
+[0m11:49:23.344743 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.187 seconds
+[0m11:49:23.361669 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:49:23.361669 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:49:23.361669 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:49:23.554975 [debug] [Thread-1 (]: SQL status: COMMIT in 0.185 seconds
+[0m11:49:23.557488 [debug] [Thread-1 (]: Applying DROP to: "galp_project"."public_public"."yearly_average__dbt_backup"
+[0m11:49:23.571092 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:49:23.571092 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+drop table if exists "galp_project"."public_public"."yearly_average__dbt_backup" cascade
+[0m11:49:23.729363 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.162 seconds
+[0m11:49:23.740885 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: Close
+[0m11:49:23.746047 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '57e6c947-15d8-4b52-8968-308833e66202', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01D4F28D0>]}
+[0m11:49:23.746047 [info ] [Thread-1 (]: 1 of 1 OK created sql table model public_public.yearly_average ................. [[32mSELECT 20[0m in 2.74s]
+[0m11:49:23.746047 [debug] [Thread-1 (]: Finished running node model.galp_dbt_project.yearly_average
+[0m11:49:23.746047 [debug] [MainThread]: Using postgres connection "master"
+[0m11:49:23.746047 [debug] [MainThread]: On master: BEGIN
+[0m11:49:23.746047 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:49:25.294673 [debug] [MainThread]: SQL status: BEGIN in 1.542 seconds
+[0m11:49:25.295195 [debug] [MainThread]: On master: COMMIT
+[0m11:49:25.295722 [debug] [MainThread]: Using postgres connection "master"
+[0m11:49:25.296247 [debug] [MainThread]: On master: COMMIT
+[0m11:49:25.498930 [debug] [MainThread]: SQL status: COMMIT in 0.202 seconds
+[0m11:49:25.500202 [debug] [MainThread]: On master: Close
+[0m11:49:25.501698 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:49:25.502460 [debug] [MainThread]: Connection 'list_galp_project' was properly closed.
+[0m11:49:25.502629 [debug] [MainThread]: Connection 'list_galp_project_public_public' was properly closed.
+[0m11:49:25.503277 [debug] [MainThread]: Connection 'model.galp_dbt_project.yearly_average' was properly closed.
+[0m11:49:25.503913 [info ] [MainThread]: 
+[0m11:49:25.505072 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 10.68 seconds (10.68s).
+[0m11:49:25.506729 [debug] [MainThread]: Command end result
+[0m11:49:25.528113 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:49:25.530428 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:49:25.534160 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:49:25.534160 [info ] [MainThread]: 
+[0m11:49:25.534160 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:49:25.540666 [info ] [MainThread]: 
+[0m11:49:25.540666 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:49:25.540666 [debug] [MainThread]: Command `dbt run` succeeded at 11:49:25.540666 after 12.31 seconds
+[0m11:49:25.540666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C016C6CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01C541790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C01C543C50>]}
+[0m11:49:25.540666 [debug] [MainThread]: Flushing usage events
+[0m11:49:26.524773 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:51:28.000641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002394D0FC3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002394CCED7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002394CCEDC90>]}
+
+
+============================== 11:51:28.000641 | 1d696d65-6f6e-4092-808d-9b3ce9631dfb ==============================
+[0m11:51:28.000641 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:51:28.000641 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:51:28.150564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1d696d65-6f6e-4092-808d-9b3ce9631dfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002394D1C4190>]}
+[0m11:51:28.170788 [debug] [MainThread]: Command `dbt clean` succeeded at 11:51:28.170788 after 0.29 seconds
+[0m11:51:28.170788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002394776CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002394D11AC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023947C13ED0>]}
+[0m11:51:28.170788 [debug] [MainThread]: Flushing usage events
+[0m11:51:29.200242 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:51:34.399441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A205C004D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A205C02290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A205C00E90>]}
+
+
+============================== 11:51:34.405454 | b91293f2-4d12-43f4-b2fc-833e120a6f19 ==============================
+[0m11:51:34.405454 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:51:34.405454 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:51:34.605950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A205D5EB90>]}
+[0m11:51:34.658042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A201AB8B50>]}
+[0m11:51:34.658042 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:51:34.916354 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:51:34.916354 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:51:34.916354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2061B0D50>]}
+[0m11:51:35.811582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A2063C5250>]}
+[0m11:51:35.859531 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:51:35.867621 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:51:35.884277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A20671CD90>]}
+[0m11:51:35.884277 [info ] [MainThread]: Found 1 model, 433 macros
+[0m11:51:35.884277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A206647E50>]}
+[0m11:51:35.884277 [info ] [MainThread]: 
+[0m11:51:35.884277 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:51:35.884277 [info ] [MainThread]: 
+[0m11:51:35.884277 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:51:35.884277 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project'
+[0m11:51:36.008623 [debug] [ThreadPool]: Using postgres connection "list_galp_project"
+[0m11:51:36.008623 [debug] [ThreadPool]: On list_galp_project: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:51:36.008623 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:51:37.570333 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.567 seconds
+[0m11:51:37.578364 [debug] [ThreadPool]: On list_galp_project: Close
+[0m11:51:37.582917 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_galp_project, now create_galp_project_public_public)
+[0m11:51:37.582917 [debug] [ThreadPool]: Creating schema "database: "galp_project"
+schema: "public_public"
+"
+[0m11:51:37.582917 [debug] [ThreadPool]: Using postgres connection "create_galp_project_public_public"
+[0m11:51:37.594526 [debug] [ThreadPool]: On create_galp_project_public_public: BEGIN
+[0m11:51:37.594526 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:51:39.233803 [debug] [ThreadPool]: SQL status: BEGIN in 1.641 seconds
+[0m11:51:39.237081 [debug] [ThreadPool]: Using postgres connection "create_galp_project_public_public"
+[0m11:51:39.237081 [debug] [ThreadPool]: On create_galp_project_public_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "create_galp_project_public_public"} */
+create schema if not exists "public_public"
+[0m11:51:39.434047 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.199 seconds
+[0m11:51:39.434047 [debug] [ThreadPool]: On create_galp_project_public_public: COMMIT
+[0m11:51:39.434047 [debug] [ThreadPool]: Using postgres connection "create_galp_project_public_public"
+[0m11:51:39.434047 [debug] [ThreadPool]: On create_galp_project_public_public: COMMIT
+[0m11:51:39.632363 [debug] [ThreadPool]: SQL status: COMMIT in 0.198 seconds
+[0m11:51:39.644973 [debug] [ThreadPool]: On create_galp_project_public_public: Close
+[0m11:51:39.645869 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project_public_public'
+[0m11:51:39.648907 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:51:39.648907 [debug] [ThreadPool]: On list_galp_project_public_public: BEGIN
+[0m11:51:39.648907 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:51:41.077120 [debug] [ThreadPool]: SQL status: BEGIN in 1.422 seconds
+[0m11:51:41.077630 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public_public"
+[0m11:51:41.078145 [debug] [ThreadPool]: On list_galp_project_public_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project_public_public"} */
+select
+      'galp_project' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_public'
+    union all
+    select
+      'galp_project' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_public'
+  
+[0m11:51:41.266307 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.203 seconds
+[0m11:51:41.284052 [debug] [ThreadPool]: On list_galp_project_public_public: ROLLBACK
+[0m11:51:41.484920 [debug] [ThreadPool]: On list_galp_project_public_public: Close
+[0m11:51:41.497522 [debug] [MainThread]: Using postgres connection "master"
+[0m11:51:41.498840 [debug] [MainThread]: On master: BEGIN
+[0m11:51:41.498840 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:51:43.219604 [debug] [MainThread]: SQL status: BEGIN in 1.728 seconds
+[0m11:51:43.230629 [debug] [MainThread]: Using postgres connection "master"
+[0m11:51:43.230629 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:51:43.428737 [debug] [MainThread]: SQL status: SELECT 0 in 0.198 seconds
+[0m11:51:43.433379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A206646390>]}
+[0m11:51:43.433379 [debug] [MainThread]: On master: ROLLBACK
+[0m11:51:43.598487 [debug] [MainThread]: Using postgres connection "master"
+[0m11:51:43.598487 [debug] [MainThread]: On master: BEGIN
+[0m11:51:43.943673 [debug] [MainThread]: SQL status: BEGIN in 0.336 seconds
+[0m11:51:43.944198 [debug] [MainThread]: On master: COMMIT
+[0m11:51:43.945573 [debug] [MainThread]: Using postgres connection "master"
+[0m11:51:43.945573 [debug] [MainThread]: On master: COMMIT
+[0m11:51:44.149071 [debug] [MainThread]: SQL status: COMMIT in 0.202 seconds
+[0m11:51:44.149071 [debug] [MainThread]: On master: Close
+[0m11:51:44.149071 [debug] [Thread-1 (]: Began running node model.galp_dbt_project.yearly_average
+[0m11:51:44.149071 [info ] [Thread-1 (]: 1 of 1 START sql table model public_public.yearly_average ...................... [RUN]
+[0m11:51:44.149071 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.galp_dbt_project.yearly_average'
+[0m11:51:44.149071 [debug] [Thread-1 (]: Began compiling node model.galp_dbt_project.yearly_average
+[0m11:51:44.166657 [debug] [Thread-1 (]: Writing injected SQL for node "model.galp_dbt_project.yearly_average"
+[0m11:51:44.166657 [debug] [Thread-1 (]: Began executing node model.galp_dbt_project.yearly_average
+[0m11:51:44.223766 [debug] [Thread-1 (]: Writing runtime sql for node "model.galp_dbt_project.yearly_average"
+[0m11:51:44.226068 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:51:44.227125 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: BEGIN
+[0m11:51:44.227658 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:51:45.683823 [debug] [Thread-1 (]: SQL status: BEGIN in 1.459 seconds
+[0m11:51:45.683823 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:51:45.683823 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+
+  
+    
+
+  create  table "galp_project"."public_public"."yearly_average__dbt_tmp"
+  
+  
+    as
+  
+  (
+    WITH yearly_data AS (
+    SELECT 
+        DATE_PART('year', date) AS year,
+        AVG(open) AS avg_open,
+        AVG(high) AS avg_high,
+        AVG(low) AS avg_low,
+        AVG(close) AS avg_close,
+        AVG(adjusted_close) AS avg_adjusted_close,
+        AVG(volume) AS avg_volume,
+        AVG(dividend_amount) AS avg_dividend
+    FROM public.monthly_adjusted_data
+    GROUP BY year
+    ORDER BY year
+)
+SELECT * FROM yearly_data
+  );
+  
+[0m11:51:45.890142 [debug] [Thread-1 (]: SQL status: SELECT 20 in 0.203 seconds
+[0m11:51:45.900986 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:51:45.900986 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+alter table "galp_project"."public_public"."yearly_average__dbt_tmp" rename to "yearly_average"
+[0m11:51:46.090522 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.193 seconds
+[0m11:51:46.098380 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:51:46.098380 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:51:46.113388 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:51:46.298968 [debug] [Thread-1 (]: SQL status: COMMIT in 0.185 seconds
+[0m11:51:46.298968 [debug] [Thread-1 (]: Applying DROP to: "galp_project"."public_public"."yearly_average__dbt_backup"
+[0m11:51:46.314948 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:51:46.314948 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+drop table if exists "galp_project"."public_public"."yearly_average__dbt_backup" cascade
+[0m11:51:46.499215 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.184 seconds
+[0m11:51:46.499215 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: Close
+[0m11:51:46.512228 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b91293f2-4d12-43f4-b2fc-833e120a6f19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A206392910>]}
+[0m11:51:46.516758 [info ] [Thread-1 (]: 1 of 1 OK created sql table model public_public.yearly_average ................. [[32mSELECT 20[0m in 2.36s]
+[0m11:51:46.516758 [debug] [Thread-1 (]: Finished running node model.galp_dbt_project.yearly_average
+[0m11:51:46.516758 [debug] [MainThread]: Using postgres connection "master"
+[0m11:51:46.516758 [debug] [MainThread]: On master: BEGIN
+[0m11:51:46.516758 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:51:48.040870 [debug] [MainThread]: SQL status: BEGIN in 1.517 seconds
+[0m11:51:48.043013 [debug] [MainThread]: On master: COMMIT
+[0m11:51:48.043013 [debug] [MainThread]: Using postgres connection "master"
+[0m11:51:48.043013 [debug] [MainThread]: On master: COMMIT
+[0m11:51:48.243443 [debug] [MainThread]: SQL status: COMMIT in 0.198 seconds
+[0m11:51:48.243443 [debug] [MainThread]: On master: Close
+[0m11:51:48.247254 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:51:48.247724 [debug] [MainThread]: Connection 'create_galp_project_public_public' was properly closed.
+[0m11:51:48.247724 [debug] [MainThread]: Connection 'list_galp_project_public_public' was properly closed.
+[0m11:51:48.247724 [debug] [MainThread]: Connection 'model.galp_dbt_project.yearly_average' was properly closed.
+[0m11:51:48.247724 [info ] [MainThread]: 
+[0m11:51:48.247724 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 12.36 seconds (12.36s).
+[0m11:51:48.251444 [debug] [MainThread]: Command end result
+[0m11:51:48.264466 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:51:48.264466 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:51:48.285017 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:51:48.285017 [info ] [MainThread]: 
+[0m11:51:48.285017 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:51:48.285017 [info ] [MainThread]: 
+[0m11:51:48.285017 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:51:48.285017 [debug] [MainThread]: Command `dbt run` succeeded at 11:51:48.285017 after 13.98 seconds
+[0m11:51:48.285017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A20036CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A200813ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A200813190>]}
+[0m11:51:48.291531 [debug] [MainThread]: Flushing usage events
+[0m11:51:49.269003 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:54:00.882712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280C00FDD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280BFCED7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280C011B5D0>]}
+
+
+============================== 11:54:00.882712 | 3bce8072-9ffa-4ee1-80f4-d6a8f63f2bcb ==============================
+[0m11:54:00.882712 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:54:00.882712 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:54:01.012866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3bce8072-9ffa-4ee1-80f4-d6a8f63f2bcb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280C01845D0>]}
+[0m11:54:01.035187 [debug] [MainThread]: Command `dbt clean` succeeded at 11:54:01.035187 after 0.24 seconds
+[0m11:54:01.035187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280C011AC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280BA86CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280BAA63ED0>]}
+[0m11:54:01.036557 [debug] [MainThread]: Flushing usage events
+[0m11:54:01.788894 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:54:07.368423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026089901510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260898C6590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260893F6910>]}
+
+
+============================== 11:54:07.368423 | fa5efba8-d3ca-4929-ade4-1ef2c9cde113 ==============================
+[0m11:54:07.368423 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:54:07.383435 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\isabe\\.dbt', 'log_path': 'C:\\Users\\isabe\\Desktop\\EDIT\\EDIT\\Data Ops\\Galp_Project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:54:07.546441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026089ADBE50>]}
+[0m11:54:07.605243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260856B8690>]}
+[0m11:54:07.605243 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:54:07.869554 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:54:07.869554 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:54:07.869554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026089A3DB50>]}
+[0m11:54:08.790816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002608A110210>]}
+[0m11:54:08.827051 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:54:08.841938 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:54:08.856500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002608A110310>]}
+[0m11:54:08.856500 [info ] [MainThread]: Found 1 model, 433 macros
+[0m11:54:08.856500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026089EB2450>]}
+[0m11:54:08.856500 [info ] [MainThread]: 
+[0m11:54:08.856500 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:54:08.856500 [info ] [MainThread]: 
+[0m11:54:08.872200 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:54:08.875030 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project'
+[0m11:54:08.994142 [debug] [ThreadPool]: Using postgres connection "list_galp_project"
+[0m11:54:08.994892 [debug] [ThreadPool]: On list_galp_project: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:54:08.995361 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:54:10.579235 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.586 seconds
+[0m11:54:10.579235 [debug] [ThreadPool]: On list_galp_project: Close
+[0m11:54:10.579235 [debug] [ThreadPool]: Acquiring new postgres connection 'list_galp_project_public'
+[0m11:54:10.594981 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public"
+[0m11:54:10.594981 [debug] [ThreadPool]: On list_galp_project_public: BEGIN
+[0m11:54:10.594981 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:54:12.213642 [debug] [ThreadPool]: SQL status: BEGIN in 1.619 seconds
+[0m11:54:12.213642 [debug] [ThreadPool]: Using postgres connection "list_galp_project_public"
+[0m11:54:12.213642 [debug] [ThreadPool]: On list_galp_project_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "list_galp_project_public"} */
+select
+      'galp_project' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'galp_project' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'galp_project' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:54:12.423748 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.202 seconds
+[0m11:54:12.423748 [debug] [ThreadPool]: On list_galp_project_public: ROLLBACK
+[0m11:54:12.612337 [debug] [ThreadPool]: On list_galp_project_public: Close
+[0m11:54:12.625382 [debug] [MainThread]: Using postgres connection "master"
+[0m11:54:12.625382 [debug] [MainThread]: On master: BEGIN
+[0m11:54:12.625382 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:54:14.163670 [debug] [MainThread]: SQL status: BEGIN in 1.537 seconds
+[0m11:54:14.166251 [debug] [MainThread]: Using postgres connection "master"
+[0m11:54:14.166251 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:54:14.366925 [debug] [MainThread]: SQL status: SELECT 0 in 0.201 seconds
+[0m11:54:14.370124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002608A91C690>]}
+[0m11:54:14.370124 [debug] [MainThread]: On master: ROLLBACK
+[0m11:54:14.571606 [debug] [MainThread]: Using postgres connection "master"
+[0m11:54:14.571606 [debug] [MainThread]: On master: BEGIN
+[0m11:54:14.976176 [debug] [MainThread]: SQL status: BEGIN in 0.408 seconds
+[0m11:54:14.976176 [debug] [MainThread]: On master: COMMIT
+[0m11:54:14.976176 [debug] [MainThread]: Using postgres connection "master"
+[0m11:54:14.976176 [debug] [MainThread]: On master: COMMIT
+[0m11:54:15.187953 [debug] [MainThread]: SQL status: COMMIT in 0.202 seconds
+[0m11:54:15.187953 [debug] [MainThread]: On master: Close
+[0m11:54:15.187953 [debug] [Thread-1 (]: Began running node model.galp_dbt_project.yearly_average
+[0m11:54:15.187953 [info ] [Thread-1 (]: 1 of 1 START sql table model public.yearly_average ............................. [RUN]
+[0m11:54:15.187953 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.galp_dbt_project.yearly_average'
+[0m11:54:15.203625 [debug] [Thread-1 (]: Began compiling node model.galp_dbt_project.yearly_average
+[0m11:54:15.203625 [debug] [Thread-1 (]: Writing injected SQL for node "model.galp_dbt_project.yearly_average"
+[0m11:54:15.203625 [debug] [Thread-1 (]: Began executing node model.galp_dbt_project.yearly_average
+[0m11:54:15.253602 [debug] [Thread-1 (]: Writing runtime sql for node "model.galp_dbt_project.yearly_average"
+[0m11:54:15.259946 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:54:15.259946 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: BEGIN
+[0m11:54:15.259946 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:54:16.727378 [debug] [Thread-1 (]: SQL status: BEGIN in 1.468 seconds
+[0m11:54:16.727378 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:54:16.727378 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+
+  
+    
+
+  create  table "galp_project"."public"."yearly_average__dbt_tmp"
+  
+  
+    as
+  
+  (
+    WITH yearly_data AS (
+    SELECT 
+        DATE_PART('year', date) AS year,
+        AVG(open) AS avg_open,
+        AVG(high) AS avg_high,
+        AVG(low) AS avg_low,
+        AVG(close) AS avg_close,
+        AVG(adjusted_close) AS avg_adjusted_close,
+        AVG(volume) AS avg_volume,
+        AVG(dividend_amount) AS avg_dividend
+    FROM public.monthly_adjusted_data
+    GROUP BY year
+    ORDER BY year
+)
+SELECT * FROM yearly_data
+  );
+  
+[0m11:54:16.920109 [debug] [Thread-1 (]: SQL status: SELECT 20 in 0.199 seconds
+[0m11:54:16.932694 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:54:16.944301 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+alter table "galp_project"."public"."yearly_average__dbt_tmp" rename to "yearly_average"
+[0m11:54:17.119216 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.189 seconds
+[0m11:54:17.146820 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:54:17.146820 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:54:17.146820 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: COMMIT
+[0m11:54:17.328680 [debug] [Thread-1 (]: SQL status: COMMIT in 0.183 seconds
+[0m11:54:17.344421 [debug] [Thread-1 (]: Applying DROP to: "galp_project"."public"."yearly_average__dbt_backup"
+[0m11:54:17.344421 [debug] [Thread-1 (]: Using postgres connection "model.galp_dbt_project.yearly_average"
+[0m11:54:17.344421 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "galp_dbt_project", "target_name": "dev", "node_id": "model.galp_dbt_project.yearly_average"} */
+drop table if exists "galp_project"."public"."yearly_average__dbt_backup" cascade
+[0m11:54:17.540828 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.187 seconds
+[0m11:54:17.544861 [debug] [Thread-1 (]: On model.galp_dbt_project.yearly_average: Close
+[0m11:54:17.544861 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa5efba8-d3ca-4929-ade4-1ef2c9cde113', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002608A8A0E50>]}
+[0m11:54:17.556969 [info ] [Thread-1 (]: 1 of 1 OK created sql table model public.yearly_average ........................ [[32mSELECT 20[0m in 2.36s]
+[0m11:54:17.560245 [debug] [Thread-1 (]: Finished running node model.galp_dbt_project.yearly_average
+[0m11:54:17.560245 [debug] [MainThread]: Using postgres connection "master"
+[0m11:54:17.560245 [debug] [MainThread]: On master: BEGIN
+[0m11:54:17.560245 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:54:19.080360 [debug] [MainThread]: SQL status: BEGIN in 1.514 seconds
+[0m11:54:19.080360 [debug] [MainThread]: On master: COMMIT
+[0m11:54:19.080360 [debug] [MainThread]: Using postgres connection "master"
+[0m11:54:19.080360 [debug] [MainThread]: On master: COMMIT
+[0m11:54:19.275949 [debug] [MainThread]: SQL status: COMMIT in 0.203 seconds
+[0m11:54:19.275949 [debug] [MainThread]: On master: Close
+[0m11:54:19.275949 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:54:19.275949 [debug] [MainThread]: Connection 'list_galp_project' was properly closed.
+[0m11:54:19.291357 [debug] [MainThread]: Connection 'list_galp_project_public' was properly closed.
+[0m11:54:19.291357 [debug] [MainThread]: Connection 'model.galp_dbt_project.yearly_average' was properly closed.
+[0m11:54:19.291357 [info ] [MainThread]: 
+[0m11:54:19.291357 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 10.42 seconds (10.42s).
+[0m11:54:19.291357 [debug] [MainThread]: Command end result
+[0m11:54:19.323319 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\manifest.json
+[0m11:54:19.323319 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\semantic_manifest.json
+[0m11:54:19.330467 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\isabe\Desktop\EDIT\EDIT\Data Ops\Galp_Project\target\run_results.json
+[0m11:54:19.330467 [info ] [MainThread]: 
+[0m11:54:19.330467 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:54:19.330467 [info ] [MainThread]: 
+[0m11:54:19.339005 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:54:19.339005 [debug] [MainThread]: Command `dbt run` succeeded at 11:54:19.339005 after 12.06 seconds
+[0m11:54:19.339005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026083F6CA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026084025F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260894EDC50>]}
+[0m11:54:19.339005 [debug] [MainThread]: Flushing usage events
+[0m11:54:20.196669 [debug] [MainThread]: An error was encountered while trying to flush usage events

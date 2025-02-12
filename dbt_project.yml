@@ -1,0 +1,15 @@
+name: 'galp_dbt_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'galp_dbt_project'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  galp_dbt_project:
+    +materialized: table
+    +schema: null  # Force dbt to use the schema from profiles.yml
+
