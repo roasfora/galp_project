@@ -5,3 +5,5 @@ data/
 #ignorar a venv
 
 venv/
+
+.env/
