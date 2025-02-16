@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  scheduler:
+    volumes:
+      - "C:/Users/isabe/Desktop/EDIT/EDIT/Data Ops/Galp_Project:/usr/local/airflow/dags/Galp_Project"
+      - "C:/Users/isabe/Desktop/EDIT/EDIT/Data Ops/Galp_Project/src:/usr/local/airflow/dags/src"
+  webserver:
+    volumes:
+      - "C:/Users/isabe/Desktop/EDIT/EDIT/Data Ops/Galp_Project:/usr/local/airflow/dags/Galp_Project"
+      - "C:/Users/isabe/Desktop/EDIT/EDIT/Data Ops/Galp_Project/src:/usr/local/airflow/dags/src"
