@@ -29,6 +29,7 @@ The collected data is **stored in PostgreSQL**, transformed using **dbt**, and c
 
 ## 🛠️ Tech Stack  
 - **Python 3.9+**  
+- **Airflow** (Task orchestration)  
 - **pytest** (Automated testing framework)  
 - **Selenium** (Web scraping with browser automation)  
 - **BeautifulSoup** (Web scraping for exchange rates)  
@@ -36,6 +37,7 @@ The collected data is **stored in PostgreSQL**, transformed using **dbt**, and c
 - **PostgreSQL** (Database for storing collected data)  
 - **SQLAlchemy** (Database ORM for Python)  
 - **dbt** (Data transformation and aggregation)  
+- **Docker** (Containerized execution)  
 - **GitHub Actions** (Automated testing with CI/CD)  
 
 ---
